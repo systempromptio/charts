@@ -39,16 +39,13 @@ entries:
       artifacthub.io/screenshots: |
         - title: Governance you can prove — live audit of every tool call
           url: https://systemprompt.io/files/images/og-image.jpg
-      artifacthub.io/signKey: |
-        fingerprint: TODO-replace-with-cosign-key-fingerprint
-        url: https://systemprompt.io/.well-known/cosign.pub
     apiVersion: v2
     appVersion: 0.4.0
-    created: "2026-04-24T22:35:07.178426088Z"
+    created: "2026-04-25T07:23:37.41009458Z"
     description: The governance layer for AI agents — a single compiled Rust binary
       that authenticates, authorises, rate-limits, logs, and costs every AI interaction.
       Self-hosted, air-gap capable, provider-agnostic.
-    digest: 8cb50b45d4a762fea938c29e5c7164f5f8b98027c80b37d5ca51a130d4c4d640
+    digest: f286b99cee264662cad9be8048d60f7595ef67cddebd994e6dde3a9b8bf9984d
     home: https://systemprompt.io
     icon: https://systemprompt.io/files/images/logo.svg
     keywords:
@@ -79,4 +76,4 @@ entries:
     urls:
     - https://charts.systemprompt.io/gateway-0.2.0.tgz
     version: 0.2.0
-generated: "2026-04-24T22:35:07.17722866Z"
+generated: "2026-04-25T07:23:37.409420253Z"
