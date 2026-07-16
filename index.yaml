@@ -41,11 +41,11 @@ entries:
           url: https://systemprompt.io/files/images/og-image.jpg
     apiVersion: v2
     appVersion: 0.4.0
-    created: "2026-04-25T07:23:37.41009458Z"
+    created: "2026-07-16T10:49:59.183244667+02:00"
     description: The governance layer for AI agents — a single compiled Rust binary
       that authenticates, authorises, rate-limits, logs, and costs every AI interaction.
       Self-hosted, air-gap capable, provider-agnostic.
-    digest: f286b99cee264662cad9be8048d60f7595ef67cddebd994e6dde3a9b8bf9984d
+    digest: 1439d803f3636dc880493a0575d72814a3cc18fe5a0fe20887457f087fd82e9d
     home: https://systemprompt.io
     icon: https://systemprompt.io/files/images/logo.svg
     keywords:
@@ -76,4 +76,4 @@ entries:
     urls:
     - https://charts.systemprompt.io/gateway-0.2.0.tgz
     version: 0.2.0
-generated: "2026-04-25T07:23:37.409420253Z"
+generated: "2026-07-16T10:49:59.182356705+02:00"
