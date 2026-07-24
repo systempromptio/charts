@@ -49,11 +49,11 @@ entries:
           url: https://systemprompt.io/files/images/og-image.jpg
     apiVersion: v2
     appVersion: 0.23.0
-    created: "2026-07-24T15:03:44.806366501Z"
+    created: "2026-07-24T16:49:22.083430458Z"
     description: The governance layer for AI agents — a single compiled Rust binary
       that authenticates, authorises, rate-limits, logs, and costs every AI interaction.
       Self-hosted, air-gap capable, provider-agnostic.
-    digest: 06afab55d71f82b7a2a4a8e0f2996f291cda44938e8ad3d3d40de8c27f8c9aff
+    digest: 821ef7634952a03cc8ab5835e4b966032ea592ca2ad02846968a2d25ed86582d
     home: https://systemprompt.io
     icon: https://systemprompt.io/files/images/logo.svg
     keywords:
@@ -130,7 +130,7 @@ entries:
           url: https://systemprompt.io/files/images/og-image.jpg
     apiVersion: v2
     appVersion: 0.22.0
-    created: "2026-07-24T15:03:44.805618825Z"
+    created: "2026-07-24T16:49:22.082350145Z"
     description: The governance layer for AI agents — a single compiled Rust binary
       that authenticates, authorises, rate-limits, logs, and costs every AI interaction.
       Self-hosted, air-gap capable, provider-agnostic.
@@ -209,7 +209,7 @@ entries:
           url: https://systemprompt.io/files/images/og-image.jpg
     apiVersion: v2
     appVersion: 0.21.1
-    created: "2026-07-24T15:03:44.804825311Z"
+    created: "2026-07-24T16:49:22.081341666Z"
     description: The governance layer for AI agents — a single compiled Rust binary
       that authenticates, authorises, rate-limits, logs, and costs every AI interaction.
       Self-hosted, air-gap capable, provider-agnostic.
@@ -286,7 +286,7 @@ entries:
           url: https://systemprompt.io/files/images/og-image.jpg
     apiVersion: v2
     appVersion: 0.21.0
-    created: "2026-07-24T15:03:44.804093709Z"
+    created: "2026-07-24T16:49:22.080309542Z"
     description: The governance layer for AI agents — a single compiled Rust binary
       that authenticates, authorises, rate-limits, logs, and costs every AI interaction.
       Self-hosted, air-gap capable, provider-agnostic.
@@ -321,4 +321,4 @@ entries:
     urls:
     - https://charts.systemprompt.io/gateway-0.3.0.tgz
     version: 0.3.0
-generated: "2026-07-24T15:03:44.803156179Z"
+generated: "2026-07-24T16:49:22.079001502Z"
