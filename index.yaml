@@ -5,6 +5,101 @@ entries:
       artifacthub.io/category: ai-machine-learning
       artifacthub.io/changes: |
         - kind: changed
+          description: Bumped appVersion to 0.29.0 (core + gateway version alignment).
+        - kind: changed
+          description: Bumped appVersion to 0.28.0 (core + gateway version alignment).
+        - kind: changed
+          description: Bumped appVersion to 0.27.0 (core + gateway version alignment).
+        - kind: changed
+          description: Bumped appVersion to 0.26.0 (core + gateway version alignment).
+        - kind: changed
+          description: Bumped appVersion to 0.25.0 (core + gateway version alignment).
+        - kind: changed
+          description: Bumped appVersion to 0.24.0 (core + gateway version alignment).
+        - kind: changed
+          description: Bumped appVersion to 0.23.0 (core + gateway version alignment).
+        - kind: changed
+          description: Bumped appVersion to 0.22.0 (core + gateway version alignment).
+        - kind: changed
+          description: Bumped appVersion to 0.21.1 (core + gateway version alignment).
+        - kind: changed
+          description: Bumped appVersion to 0.21.0 (core + gateway version alignment).
+        - kind: changed
+          description: Drop bundled Postgres subchart — users point the gateway at any Postgres 13+ via DATABASE_URL (managed RDS, self-hosted, separate bitnami/postgresql install, etc.). Keeps the chart lean and avoids subchart licensing drift.
+        - kind: added
+          description: Bumped appVersion to 0.4.0 (core + gateway version alignment).
+      artifacthub.io/containsSecurityUpdates: "false"
+      artifacthub.io/displayName: systemprompt — AI governance gateway
+      artifacthub.io/images: |
+        - name: gateway
+          image: ghcr.io/systempromptio/systemprompt-template:0.29.0
+          platforms:
+            - linux/amd64
+            - linux/arm64
+      artifacthub.io/license: MIT AND BUSL-1.1
+      artifacthub.io/links: |
+        - name: Website
+          url: https://systemprompt.io
+        - name: Documentation
+          url: https://systemprompt.io/documentation/
+        - name: Guides
+          url: https://systemprompt.io/guides
+        - name: Main repository
+          url: https://github.com/systempromptio/systemprompt-template
+        - name: Chart source
+          url: https://github.com/systempromptio/systemprompt-template/tree/main/helm/gateway
+        - name: Install docs
+          url: https://github.com/systempromptio/systemprompt-template/blob/main/docs/install/helm.md
+        - name: Discord
+          url: https://discord.gg/wkAbSuPWpr
+      artifacthub.io/operator: "false"
+      artifacthub.io/prerelease: "false"
+      artifacthub.io/recommendations: |
+        - url: https://artifacthub.io/packages/helm/bitnami/postgresql
+      artifacthub.io/screenshots: |
+        - title: Governance you can prove — live audit of every tool call
+          url: https://systemprompt.io/files/images/og-image.jpg
+    apiVersion: v2
+    appVersion: 0.29.0
+    created: "2026-08-05T22:34:03.947729636Z"
+    description: The governance layer for AI agents — a single compiled Rust binary
+      that authenticates, authorises, rate-limits, logs, and costs every AI interaction.
+      Self-hosted, air-gap capable, provider-agnostic.
+    digest: 33e3d4957c8701f77c4cb9521526cc2d4c368465cc7febdf9a5d387300c00108
+    home: https://systemprompt.io
+    icon: https://systemprompt.io/files/images/logo.svg
+    keywords:
+    - ai-governance
+    - llm-gateway
+    - mcp
+    - claude
+    - anthropic
+    - openai
+    - gemini
+    - self-hosted
+    - rust
+    - audit
+    - policy
+    - rate-limiting
+    - air-gap
+    kubeVersion: '>=1.24.0'
+    maintainers:
+    - email: support@systemprompt.io
+      name: systemprompt.io
+      url: https://systemprompt.io
+    name: gateway
+    sources:
+    - https://github.com/systempromptio/systemprompt-template
+    - https://github.com/systempromptio/systemprompt-core
+    - https://github.com/systempromptio/charts
+    type: application
+    urls:
+    - https://charts.systemprompt.io/gateway-0.10.0.tgz
+    version: 0.10.0
+  - annotations:
+      artifacthub.io/category: ai-machine-learning
+      artifacthub.io/changes: |
+        - kind: changed
           description: Bumped appVersion to 0.28.0 (core + gateway version alignment).
         - kind: changed
           description: Bumped appVersion to 0.27.0 (core + gateway version alignment).
@@ -59,7 +154,7 @@ entries:
           url: https://systemprompt.io/files/images/og-image.jpg
     apiVersion: v2
     appVersion: 0.28.0
-    created: "2026-07-31T19:08:59.68187241Z"
+    created: "2026-08-05T22:34:03.956712117Z"
     description: The governance layer for AI agents — a single compiled Rust binary
       that authenticates, authorises, rate-limits, logs, and costs every AI interaction.
       Self-hosted, air-gap capable, provider-agnostic.
@@ -150,7 +245,7 @@ entries:
           url: https://systemprompt.io/files/images/og-image.jpg
     apiVersion: v2
     appVersion: 0.27.0
-    created: "2026-07-31T19:08:59.680855941Z"
+    created: "2026-08-05T22:34:03.956140918Z"
     description: The governance layer for AI agents — a single compiled Rust binary
       that authenticates, authorises, rate-limits, logs, and costs every AI interaction.
       Self-hosted, air-gap capable, provider-agnostic.
@@ -239,7 +334,7 @@ entries:
           url: https://systemprompt.io/files/images/og-image.jpg
     apiVersion: v2
     appVersion: 0.26.0
-    created: "2026-07-31T19:08:59.67970462Z"
+    created: "2026-08-05T22:34:03.955154367Z"
     description: The governance layer for AI agents — a single compiled Rust binary
       that authenticates, authorises, rate-limits, logs, and costs every AI interaction.
       Self-hosted, air-gap capable, provider-agnostic.
@@ -326,7 +421,7 @@ entries:
           url: https://systemprompt.io/files/images/og-image.jpg
     apiVersion: v2
     appVersion: 0.25.0
-    created: "2026-07-31T19:08:59.678667652Z"
+    created: "2026-08-05T22:34:03.953643208Z"
     description: The governance layer for AI agents — a single compiled Rust binary
       that authenticates, authorises, rate-limits, logs, and costs every AI interaction.
       Self-hosted, air-gap capable, provider-agnostic.
@@ -411,7 +506,7 @@ entries:
           url: https://systemprompt.io/files/images/og-image.jpg
     apiVersion: v2
     appVersion: 0.24.0
-    created: "2026-07-31T19:08:59.677683954Z"
+    created: "2026-08-05T22:34:03.952630191Z"
     description: The governance layer for AI agents — a single compiled Rust binary
       that authenticates, authorises, rate-limits, logs, and costs every AI interaction.
       Self-hosted, air-gap capable, provider-agnostic.
@@ -494,7 +589,7 @@ entries:
           url: https://systemprompt.io/files/images/og-image.jpg
     apiVersion: v2
     appVersion: 0.23.0
-    created: "2026-07-31T19:08:59.676641707Z"
+    created: "2026-08-05T22:34:03.95167896Z"
     description: The governance layer for AI agents — a single compiled Rust binary
       that authenticates, authorises, rate-limits, logs, and costs every AI interaction.
       Self-hosted, air-gap capable, provider-agnostic.
@@ -575,7 +670,7 @@ entries:
           url: https://systemprompt.io/files/images/og-image.jpg
     apiVersion: v2
     appVersion: 0.22.0
-    created: "2026-07-31T19:08:59.675279156Z"
+    created: "2026-08-05T22:34:03.950659672Z"
     description: The governance layer for AI agents — a single compiled Rust binary
       that authenticates, authorises, rate-limits, logs, and costs every AI interaction.
       Self-hosted, air-gap capable, provider-agnostic.
@@ -654,7 +749,7 @@ entries:
           url: https://systemprompt.io/files/images/og-image.jpg
     apiVersion: v2
     appVersion: 0.21.1
-    created: "2026-07-31T19:08:59.674118699Z"
+    created: "2026-08-05T22:34:03.949637037Z"
     description: The governance layer for AI agents — a single compiled Rust binary
       that authenticates, authorises, rate-limits, logs, and costs every AI interaction.
       Self-hosted, air-gap capable, provider-agnostic.
@@ -731,7 +826,7 @@ entries:
           url: https://systemprompt.io/files/images/og-image.jpg
     apiVersion: v2
     appVersion: 0.21.0
-    created: "2026-07-31T19:08:59.673347848Z"
+    created: "2026-08-05T22:34:03.948672632Z"
     description: The governance layer for AI agents — a single compiled Rust binary
       that authenticates, authorises, rate-limits, logs, and costs every AI interaction.
       Self-hosted, air-gap capable, provider-agnostic.
@@ -766,4 +861,4 @@ entries:
     urls:
     - https://charts.systemprompt.io/gateway-0.3.0.tgz
     version: 0.3.0
-generated: "2026-07-31T19:08:59.672512357Z"
+generated: "2026-08-05T22:34:03.946624447Z"
