@@ -3,51 +3,173 @@ entries:
   gateway:
   - annotations:
       artifacthub.io/category: ai-machine-learning
-      artifacthub.io/changes: "- kind: changed\n  description: Bumped appVersion to\
-        \ 0.30.1 (core + gateway version alignment).\n- kind: changed\n  description:\
-        \ Bumped appVersion to 0.30.0 (core + gateway version alignment).\n- kind:\
-        \ changed\n  description: Bumped appVersion to 0.29.0 (core + gateway version\
-        \ alignment).\n- kind: changed\n  description: Bumped appVersion to 0.28.0\
-        \ (core + gateway version alignment).\n- kind: changed\n  description: Bumped\
-        \ appVersion to 0.27.0 (core + gateway version alignment).\n- kind: changed\n\
-        \  description: Bumped appVersion to 0.26.0 (core + gateway version alignment).\n\
-        - kind: changed\n  description: Bumped appVersion to 0.25.0 (core + gateway\
-        \ version alignment).\n- kind: changed\n  description: Bumped appVersion to\
-        \ 0.24.0 (core + gateway version alignment).\n- kind: changed\n  description:\
-        \ Bumped appVersion to 0.23.0 (core + gateway version alignment).\n- kind:\
-        \ changed\n  description: Bumped appVersion to 0.22.0 (core + gateway version\
-        \ alignment).\n- kind: changed\n  description: Bumped appVersion to 0.21.1\
-        \ (core + gateway version alignment).\n- kind: changed\n  description: Bumped\
-        \ appVersion to 0.21.0 (core + gateway version alignment).\n- kind: changed\n\
-        \  description: Drop bundled Postgres subchart \u2014 users point the gateway\
-        \ at any Postgres 13+ via DATABASE_URL (managed RDS, self-hosted, separate\
-        \ bitnami/postgresql install, etc.). Keeps the chart lean and avoids subchart\
-        \ licensing drift.\n- kind: added\n  description: Bumped appVersion to 0.4.0\
-        \ (core + gateway version alignment).\n"
-      artifacthub.io/containsSecurityUpdates: 'false'
-      artifacthub.io/displayName: "systemprompt \u2014 AI governance gateway"
-      artifacthub.io/images: "- name: gateway\n  image: ghcr.io/systempromptio/systemprompt-template:0.30.1\n\
-        \  platforms:\n    - linux/amd64\n    - linux/arm64\n"
+      artifacthub.io/changes: |
+        - kind: changed
+          description: Bumped appVersion to 0.31.0 (core + gateway version alignment).
+        - kind: changed
+          description: Bumped appVersion to 0.30.1 (core + gateway version alignment).
+        - kind: changed
+          description: Bumped appVersion to 0.30.0 (core + gateway version alignment).
+        - kind: changed
+          description: Bumped appVersion to 0.29.0 (core + gateway version alignment).
+        - kind: changed
+          description: Bumped appVersion to 0.28.0 (core + gateway version alignment).
+        - kind: changed
+          description: Bumped appVersion to 0.27.0 (core + gateway version alignment).
+        - kind: changed
+          description: Bumped appVersion to 0.26.0 (core + gateway version alignment).
+        - kind: changed
+          description: Bumped appVersion to 0.25.0 (core + gateway version alignment).
+        - kind: changed
+          description: Bumped appVersion to 0.24.0 (core + gateway version alignment).
+        - kind: changed
+          description: Bumped appVersion to 0.23.0 (core + gateway version alignment).
+        - kind: changed
+          description: Bumped appVersion to 0.22.0 (core + gateway version alignment).
+        - kind: changed
+          description: Bumped appVersion to 0.21.1 (core + gateway version alignment).
+        - kind: changed
+          description: Bumped appVersion to 0.21.0 (core + gateway version alignment).
+        - kind: changed
+          description: Drop bundled Postgres subchart — users point the gateway at any Postgres 13+ via DATABASE_URL (managed RDS, self-hosted, separate bitnami/postgresql install, etc.). Keeps the chart lean and avoids subchart licensing drift.
+        - kind: added
+          description: Bumped appVersion to 0.4.0 (core + gateway version alignment).
+      artifacthub.io/containsSecurityUpdates: "false"
+      artifacthub.io/displayName: systemprompt — AI governance gateway
+      artifacthub.io/images: |
+        - name: gateway
+          image: ghcr.io/systempromptio/systemprompt-template:0.31.0
+          platforms:
+            - linux/amd64
+            - linux/arm64
       artifacthub.io/license: MIT AND BUSL-1.1
-      artifacthub.io/links: "- name: Website\n  url: https://systemprompt.io\n- name:\
-        \ Documentation\n  url: https://systemprompt.io/documentation/\n- name: Guides\n\
-        \  url: https://systemprompt.io/guides\n- name: Main repository\n  url: https://github.com/systempromptio/systemprompt-template\n\
-        - name: Chart source\n  url: https://github.com/systempromptio/systemprompt-template/tree/main/helm/gateway\n\
-        - name: Install docs\n  url: https://github.com/systempromptio/systemprompt-template/blob/main/docs/install/helm.md\n\
-        - name: Discord\n  url: https://discord.gg/wkAbSuPWpr\n"
-      artifacthub.io/operator: 'false'
-      artifacthub.io/prerelease: 'false'
-      artifacthub.io/recommendations: '- url: https://artifacthub.io/packages/helm/bitnami/postgresql
-
-        '
-      artifacthub.io/screenshots: "- title: Governance you can prove \u2014 live audit\
-        \ of every tool call\n  url: https://systemprompt.io/files/images/og-image.jpg\n"
+      artifacthub.io/links: |
+        - name: Website
+          url: https://systemprompt.io
+        - name: Documentation
+          url: https://systemprompt.io/documentation/
+        - name: Guides
+          url: https://systemprompt.io/guides
+        - name: Main repository
+          url: https://github.com/systempromptio/systemprompt-template
+        - name: Chart source
+          url: https://github.com/systempromptio/systemprompt-template/tree/main/helm/gateway
+        - name: Install docs
+          url: https://github.com/systempromptio/systemprompt-template/blob/main/docs/install/helm.md
+        - name: Discord
+          url: https://discord.gg/wkAbSuPWpr
+      artifacthub.io/operator: "false"
+      artifacthub.io/prerelease: "false"
+      artifacthub.io/recommendations: |
+        - url: https://artifacthub.io/packages/helm/bitnami/postgresql
+      artifacthub.io/screenshots: |
+        - title: Governance you can prove — live audit of every tool call
+          url: https://systemprompt.io/files/images/og-image.jpg
+    apiVersion: v2
+    appVersion: 0.31.0
+    created: "2026-08-18T20:15:19.011666461Z"
+    description: The governance layer for AI agents — a single compiled Rust binary
+      that authenticates, authorises, rate-limits, logs, and costs every AI interaction.
+      Self-hosted, air-gap capable, provider-agnostic.
+    digest: a18239142fdaa4923229ca2dfbc2d9610c37afa38552dfbc42cdbd9853a69fc1
+    home: https://systemprompt.io
+    icon: https://systemprompt.io/files/images/logo.svg
+    keywords:
+    - ai-governance
+    - llm-gateway
+    - mcp
+    - claude
+    - anthropic
+    - openai
+    - gemini
+    - self-hosted
+    - rust
+    - audit
+    - policy
+    - rate-limiting
+    - air-gap
+    kubeVersion: '>=1.24.0'
+    maintainers:
+    - email: support@systemprompt.io
+      name: systemprompt.io
+      url: https://systemprompt.io
+    name: gateway
+    sources:
+    - https://github.com/systempromptio/systemprompt-template
+    - https://github.com/systempromptio/systemprompt-core
+    - https://github.com/systempromptio/charts
+    type: application
+    urls:
+    - https://charts.systemprompt.io/gateway-0.13.0.tgz
+    version: 0.13.0
+  - annotations:
+      artifacthub.io/category: ai-machine-learning
+      artifacthub.io/changes: |
+        - kind: changed
+          description: Bumped appVersion to 0.30.1 (core + gateway version alignment).
+        - kind: changed
+          description: Bumped appVersion to 0.30.0 (core + gateway version alignment).
+        - kind: changed
+          description: Bumped appVersion to 0.29.0 (core + gateway version alignment).
+        - kind: changed
+          description: Bumped appVersion to 0.28.0 (core + gateway version alignment).
+        - kind: changed
+          description: Bumped appVersion to 0.27.0 (core + gateway version alignment).
+        - kind: changed
+          description: Bumped appVersion to 0.26.0 (core + gateway version alignment).
+        - kind: changed
+          description: Bumped appVersion to 0.25.0 (core + gateway version alignment).
+        - kind: changed
+          description: Bumped appVersion to 0.24.0 (core + gateway version alignment).
+        - kind: changed
+          description: Bumped appVersion to 0.23.0 (core + gateway version alignment).
+        - kind: changed
+          description: Bumped appVersion to 0.22.0 (core + gateway version alignment).
+        - kind: changed
+          description: Bumped appVersion to 0.21.1 (core + gateway version alignment).
+        - kind: changed
+          description: Bumped appVersion to 0.21.0 (core + gateway version alignment).
+        - kind: changed
+          description: Drop bundled Postgres subchart — users point the gateway at any Postgres 13+ via DATABASE_URL (managed RDS, self-hosted, separate bitnami/postgresql install, etc.). Keeps the chart lean and avoids subchart licensing drift.
+        - kind: added
+          description: Bumped appVersion to 0.4.0 (core + gateway version alignment).
+      artifacthub.io/containsSecurityUpdates: "false"
+      artifacthub.io/displayName: systemprompt — AI governance gateway
+      artifacthub.io/images: |
+        - name: gateway
+          image: ghcr.io/systempromptio/systemprompt-template:0.30.1
+          platforms:
+            - linux/amd64
+            - linux/arm64
+      artifacthub.io/license: MIT AND BUSL-1.1
+      artifacthub.io/links: |
+        - name: Website
+          url: https://systemprompt.io
+        - name: Documentation
+          url: https://systemprompt.io/documentation/
+        - name: Guides
+          url: https://systemprompt.io/guides
+        - name: Main repository
+          url: https://github.com/systempromptio/systemprompt-template
+        - name: Chart source
+          url: https://github.com/systempromptio/systemprompt-template/tree/main/helm/gateway
+        - name: Install docs
+          url: https://github.com/systempromptio/systemprompt-template/blob/main/docs/install/helm.md
+        - name: Discord
+          url: https://discord.gg/wkAbSuPWpr
+      artifacthub.io/operator: "false"
+      artifacthub.io/prerelease: "false"
+      artifacthub.io/recommendations: |
+        - url: https://artifacthub.io/packages/helm/bitnami/postgresql
+      artifacthub.io/screenshots: |
+        - title: Governance you can prove — live audit of every tool call
+          url: https://systemprompt.io/files/images/og-image.jpg
     apiVersion: v2
     appVersion: 0.30.1
-    created: '2026-08-07T21:16:50.075552455Z'
-    description: "The governance layer for AI agents \u2014 a single compiled Rust\
-      \ binary that authenticates, authorises, rate-limits, logs, and costs every\
-      \ AI interaction. Self-hosted, air-gap capable, provider-agnostic."
+    created: "2026-08-18T20:15:19.011097995Z"
+    description: The governance layer for AI agents — a single compiled Rust binary
+      that authenticates, authorises, rate-limits, logs, and costs every AI interaction.
+      Self-hosted, air-gap capable, provider-agnostic.
     digest: 46771efe95d4662a163e4d8d6cbe6fd530585130901c358dc1860cadad8a29ef
     home: https://systemprompt.io
     icon: https://systemprompt.io/files/images/logo.svg
@@ -81,50 +203,70 @@ entries:
     version: 0.12.0
   - annotations:
       artifacthub.io/category: ai-machine-learning
-      artifacthub.io/changes: "- kind: changed\n  description: Bumped appVersion to\
-        \ 0.30.0 (core + gateway version alignment).\n- kind: changed\n  description:\
-        \ Bumped appVersion to 0.29.0 (core + gateway version alignment).\n- kind:\
-        \ changed\n  description: Bumped appVersion to 0.28.0 (core + gateway version\
-        \ alignment).\n- kind: changed\n  description: Bumped appVersion to 0.27.0\
-        \ (core + gateway version alignment).\n- kind: changed\n  description: Bumped\
-        \ appVersion to 0.26.0 (core + gateway version alignment).\n- kind: changed\n\
-        \  description: Bumped appVersion to 0.25.0 (core + gateway version alignment).\n\
-        - kind: changed\n  description: Bumped appVersion to 0.24.0 (core + gateway\
-        \ version alignment).\n- kind: changed\n  description: Bumped appVersion to\
-        \ 0.23.0 (core + gateway version alignment).\n- kind: changed\n  description:\
-        \ Bumped appVersion to 0.22.0 (core + gateway version alignment).\n- kind:\
-        \ changed\n  description: Bumped appVersion to 0.21.1 (core + gateway version\
-        \ alignment).\n- kind: changed\n  description: Bumped appVersion to 0.21.0\
-        \ (core + gateway version alignment).\n- kind: changed\n  description: Drop\
-        \ bundled Postgres subchart \u2014 users point the gateway at any Postgres\
-        \ 13+ via DATABASE_URL (managed RDS, self-hosted, separate bitnami/postgresql\
-        \ install, etc.). Keeps the chart lean and avoids subchart licensing drift.\n\
-        - kind: added\n  description: Bumped appVersion to 0.4.0 (core + gateway version\
-        \ alignment).\n"
-      artifacthub.io/containsSecurityUpdates: 'false'
-      artifacthub.io/displayName: "systemprompt \u2014 AI governance gateway"
-      artifacthub.io/images: "- name: gateway\n  image: ghcr.io/systempromptio/systemprompt-template:0.30.0\n\
-        \  platforms:\n    - linux/amd64\n    - linux/arm64\n"
+      artifacthub.io/changes: |
+        - kind: changed
+          description: Bumped appVersion to 0.30.0 (core + gateway version alignment).
+        - kind: changed
+          description: Bumped appVersion to 0.29.0 (core + gateway version alignment).
+        - kind: changed
+          description: Bumped appVersion to 0.28.0 (core + gateway version alignment).
+        - kind: changed
+          description: Bumped appVersion to 0.27.0 (core + gateway version alignment).
+        - kind: changed
+          description: Bumped appVersion to 0.26.0 (core + gateway version alignment).
+        - kind: changed
+          description: Bumped appVersion to 0.25.0 (core + gateway version alignment).
+        - kind: changed
+          description: Bumped appVersion to 0.24.0 (core + gateway version alignment).
+        - kind: changed
+          description: Bumped appVersion to 0.23.0 (core + gateway version alignment).
+        - kind: changed
+          description: Bumped appVersion to 0.22.0 (core + gateway version alignment).
+        - kind: changed
+          description: Bumped appVersion to 0.21.1 (core + gateway version alignment).
+        - kind: changed
+          description: Bumped appVersion to 0.21.0 (core + gateway version alignment).
+        - kind: changed
+          description: Drop bundled Postgres subchart — users point the gateway at any Postgres 13+ via DATABASE_URL (managed RDS, self-hosted, separate bitnami/postgresql install, etc.). Keeps the chart lean and avoids subchart licensing drift.
+        - kind: added
+          description: Bumped appVersion to 0.4.0 (core + gateway version alignment).
+      artifacthub.io/containsSecurityUpdates: "false"
+      artifacthub.io/displayName: systemprompt — AI governance gateway
+      artifacthub.io/images: |
+        - name: gateway
+          image: ghcr.io/systempromptio/systemprompt-template:0.30.0
+          platforms:
+            - linux/amd64
+            - linux/arm64
       artifacthub.io/license: MIT AND BUSL-1.1
-      artifacthub.io/links: "- name: Website\n  url: https://systemprompt.io\n- name:\
-        \ Documentation\n  url: https://systemprompt.io/documentation/\n- name: Guides\n\
-        \  url: https://systemprompt.io/guides\n- name: Main repository\n  url: https://github.com/systempromptio/systemprompt-template\n\
-        - name: Chart source\n  url: https://github.com/systempromptio/systemprompt-template/tree/main/helm/gateway\n\
-        - name: Install docs\n  url: https://github.com/systempromptio/systemprompt-template/blob/main/docs/install/helm.md\n\
-        - name: Discord\n  url: https://discord.gg/wkAbSuPWpr\n"
-      artifacthub.io/operator: 'false'
-      artifacthub.io/prerelease: 'false'
-      artifacthub.io/recommendations: '- url: https://artifacthub.io/packages/helm/bitnami/postgresql
-
-        '
-      artifacthub.io/screenshots: "- title: Governance you can prove \u2014 live audit\
-        \ of every tool call\n  url: https://systemprompt.io/files/images/og-image.jpg\n"
+      artifacthub.io/links: |
+        - name: Website
+          url: https://systemprompt.io
+        - name: Documentation
+          url: https://systemprompt.io/documentation/
+        - name: Guides
+          url: https://systemprompt.io/guides
+        - name: Main repository
+          url: https://github.com/systempromptio/systemprompt-template
+        - name: Chart source
+          url: https://github.com/systempromptio/systemprompt-template/tree/main/helm/gateway
+        - name: Install docs
+          url: https://github.com/systempromptio/systemprompt-template/blob/main/docs/install/helm.md
+        - name: Discord
+          url: https://discord.gg/wkAbSuPWpr
+      artifacthub.io/operator: "false"
+      artifacthub.io/prerelease: "false"
+      artifacthub.io/recommendations: |
+        - url: https://artifacthub.io/packages/helm/bitnami/postgresql
+      artifacthub.io/screenshots: |
+        - title: Governance you can prove — live audit of every tool call
+          url: https://systemprompt.io/files/images/og-image.jpg
     apiVersion: v2
     appVersion: 0.30.0
-    created: '2026-08-07T21:16:50.074611202Z'
-    description: "The governance layer for AI agents \u2014 a single compiled Rust\
-      \ binary that authenticates, authorises, rate-limits, logs, and costs every\
-      \ AI interaction. Self-hosted, air-gap capable, provider-agnostic."
+    created: "2026-08-18T20:15:19.010525183Z"
+    description: The governance layer for AI agents — a single compiled Rust binary
+      that authenticates, authorises, rate-limits, logs, and costs every AI interaction.
+      Self-hosted, air-gap capable, provider-agnostic.
     digest: ade5eb67a89dfc92589d3487beff30a356aa778b3c90725ad9883675ce1115b2
     home: https://systemprompt.io
     icon: https://systemprompt.io/files/images/logo.svg
@@ -158,48 +300,68 @@ entries:
     version: 0.11.0
   - annotations:
       artifacthub.io/category: ai-machine-learning
-      artifacthub.io/changes: "- kind: changed\n  description: Bumped appVersion to\
-        \ 0.29.0 (core + gateway version alignment).\n- kind: changed\n  description:\
-        \ Bumped appVersion to 0.28.0 (core + gateway version alignment).\n- kind:\
-        \ changed\n  description: Bumped appVersion to 0.27.0 (core + gateway version\
-        \ alignment).\n- kind: changed\n  description: Bumped appVersion to 0.26.0\
-        \ (core + gateway version alignment).\n- kind: changed\n  description: Bumped\
-        \ appVersion to 0.25.0 (core + gateway version alignment).\n- kind: changed\n\
-        \  description: Bumped appVersion to 0.24.0 (core + gateway version alignment).\n\
-        - kind: changed\n  description: Bumped appVersion to 0.23.0 (core + gateway\
-        \ version alignment).\n- kind: changed\n  description: Bumped appVersion to\
-        \ 0.22.0 (core + gateway version alignment).\n- kind: changed\n  description:\
-        \ Bumped appVersion to 0.21.1 (core + gateway version alignment).\n- kind:\
-        \ changed\n  description: Bumped appVersion to 0.21.0 (core + gateway version\
-        \ alignment).\n- kind: changed\n  description: Drop bundled Postgres subchart\
-        \ \u2014 users point the gateway at any Postgres 13+ via DATABASE_URL (managed\
-        \ RDS, self-hosted, separate bitnami/postgresql install, etc.). Keeps the\
-        \ chart lean and avoids subchart licensing drift.\n- kind: added\n  description:\
-        \ Bumped appVersion to 0.4.0 (core + gateway version alignment).\n"
-      artifacthub.io/containsSecurityUpdates: 'false'
-      artifacthub.io/displayName: "systemprompt \u2014 AI governance gateway"
-      artifacthub.io/images: "- name: gateway\n  image: ghcr.io/systempromptio/systemprompt-template:0.29.0\n\
-        \  platforms:\n    - linux/amd64\n    - linux/arm64\n"
+      artifacthub.io/changes: |
+        - kind: changed
+          description: Bumped appVersion to 0.29.0 (core + gateway version alignment).
+        - kind: changed
+          description: Bumped appVersion to 0.28.0 (core + gateway version alignment).
+        - kind: changed
+          description: Bumped appVersion to 0.27.0 (core + gateway version alignment).
+        - kind: changed
+          description: Bumped appVersion to 0.26.0 (core + gateway version alignment).
+        - kind: changed
+          description: Bumped appVersion to 0.25.0 (core + gateway version alignment).
+        - kind: changed
+          description: Bumped appVersion to 0.24.0 (core + gateway version alignment).
+        - kind: changed
+          description: Bumped appVersion to 0.23.0 (core + gateway version alignment).
+        - kind: changed
+          description: Bumped appVersion to 0.22.0 (core + gateway version alignment).
+        - kind: changed
+          description: Bumped appVersion to 0.21.1 (core + gateway version alignment).
+        - kind: changed
+          description: Bumped appVersion to 0.21.0 (core + gateway version alignment).
+        - kind: changed
+          description: Drop bundled Postgres subchart — users point the gateway at any Postgres 13+ via DATABASE_URL (managed RDS, self-hosted, separate bitnami/postgresql install, etc.). Keeps the chart lean and avoids subchart licensing drift.
+        - kind: added
+          description: Bumped appVersion to 0.4.0 (core + gateway version alignment).
+      artifacthub.io/containsSecurityUpdates: "false"
+      artifacthub.io/displayName: systemprompt — AI governance gateway
+      artifacthub.io/images: |
+        - name: gateway
+          image: ghcr.io/systempromptio/systemprompt-template:0.29.0
+          platforms:
+            - linux/amd64
+            - linux/arm64
       artifacthub.io/license: MIT AND BUSL-1.1
-      artifacthub.io/links: "- name: Website\n  url: https://systemprompt.io\n- name:\
-        \ Documentation\n  url: https://systemprompt.io/documentation/\n- name: Guides\n\
-        \  url: https://systemprompt.io/guides\n- name: Main repository\n  url: https://github.com/systempromptio/systemprompt-template\n\
-        - name: Chart source\n  url: https://github.com/systempromptio/systemprompt-template/tree/main/helm/gateway\n\
-        - name: Install docs\n  url: https://github.com/systempromptio/systemprompt-template/blob/main/docs/install/helm.md\n\
-        - name: Discord\n  url: https://discord.gg/wkAbSuPWpr\n"
-      artifacthub.io/operator: 'false'
-      artifacthub.io/prerelease: 'false'
-      artifacthub.io/recommendations: '- url: https://artifacthub.io/packages/helm/bitnami/postgresql
-
-        '
-      artifacthub.io/screenshots: "- title: Governance you can prove \u2014 live audit\
-        \ of every tool call\n  url: https://systemprompt.io/files/images/og-image.jpg\n"
+      artifacthub.io/links: |
+        - name: Website
+          url: https://systemprompt.io
+        - name: Documentation
+          url: https://systemprompt.io/documentation/
+        - name: Guides
+          url: https://systemprompt.io/guides
+        - name: Main repository
+          url: https://github.com/systempromptio/systemprompt-template
+        - name: Chart source
+          url: https://github.com/systempromptio/systemprompt-template/tree/main/helm/gateway
+        - name: Install docs
+          url: https://github.com/systempromptio/systemprompt-template/blob/main/docs/install/helm.md
+        - name: Discord
+          url: https://discord.gg/wkAbSuPWpr
+      artifacthub.io/operator: "false"
+      artifacthub.io/prerelease: "false"
+      artifacthub.io/recommendations: |
+        - url: https://artifacthub.io/packages/helm/bitnami/postgresql
+      artifacthub.io/screenshots: |
+        - title: Governance you can prove — live audit of every tool call
+          url: https://systemprompt.io/files/images/og-image.jpg
     apiVersion: v2
     appVersion: 0.29.0
-    created: '2026-08-07T21:16:50.074155774Z'
-    description: "The governance layer for AI agents \u2014 a single compiled Rust\
-      \ binary that authenticates, authorises, rate-limits, logs, and costs every\
-      \ AI interaction. Self-hosted, air-gap capable, provider-agnostic."
+    created: "2026-08-18T20:15:19.009920634Z"
+    description: The governance layer for AI agents — a single compiled Rust binary
+      that authenticates, authorises, rate-limits, logs, and costs every AI interaction.
+      Self-hosted, air-gap capable, provider-agnostic.
     digest: 33e3d4957c8701f77c4cb9521526cc2d4c368465cc7febdf9a5d387300c00108
     home: https://systemprompt.io
     icon: https://systemprompt.io/files/images/logo.svg
@@ -233,47 +395,66 @@ entries:
     version: 0.10.0
   - annotations:
       artifacthub.io/category: ai-machine-learning
-      artifacthub.io/changes: "- kind: changed\n  description: Bumped appVersion to\
-        \ 0.28.0 (core + gateway version alignment).\n- kind: changed\n  description:\
-        \ Bumped appVersion to 0.27.0 (core + gateway version alignment).\n- kind:\
-        \ changed\n  description: Bumped appVersion to 0.26.0 (core + gateway version\
-        \ alignment).\n- kind: changed\n  description: Bumped appVersion to 0.25.0\
-        \ (core + gateway version alignment).\n- kind: changed\n  description: Bumped\
-        \ appVersion to 0.24.0 (core + gateway version alignment).\n- kind: changed\n\
-        \  description: Bumped appVersion to 0.23.0 (core + gateway version alignment).\n\
-        - kind: changed\n  description: Bumped appVersion to 0.22.0 (core + gateway\
-        \ version alignment).\n- kind: changed\n  description: Bumped appVersion to\
-        \ 0.21.1 (core + gateway version alignment).\n- kind: changed\n  description:\
-        \ Bumped appVersion to 0.21.0 (core + gateway version alignment).\n- kind:\
-        \ changed\n  description: Drop bundled Postgres subchart \u2014 users point\
-        \ the gateway at any Postgres 13+ via DATABASE_URL (managed RDS, self-hosted,\
-        \ separate bitnami/postgresql install, etc.). Keeps the chart lean and avoids\
-        \ subchart licensing drift.\n- kind: added\n  description: Bumped appVersion\
-        \ to 0.4.0 (core + gateway version alignment).\n"
-      artifacthub.io/containsSecurityUpdates: 'false'
-      artifacthub.io/displayName: "systemprompt \u2014 AI governance gateway"
-      artifacthub.io/images: "- name: gateway\n  image: ghcr.io/systempromptio/systemprompt-template:0.28.0\n\
-        \  platforms:\n    - linux/amd64\n    - linux/arm64\n"
+      artifacthub.io/changes: |
+        - kind: changed
+          description: Bumped appVersion to 0.28.0 (core + gateway version alignment).
+        - kind: changed
+          description: Bumped appVersion to 0.27.0 (core + gateway version alignment).
+        - kind: changed
+          description: Bumped appVersion to 0.26.0 (core + gateway version alignment).
+        - kind: changed
+          description: Bumped appVersion to 0.25.0 (core + gateway version alignment).
+        - kind: changed
+          description: Bumped appVersion to 0.24.0 (core + gateway version alignment).
+        - kind: changed
+          description: Bumped appVersion to 0.23.0 (core + gateway version alignment).
+        - kind: changed
+          description: Bumped appVersion to 0.22.0 (core + gateway version alignment).
+        - kind: changed
+          description: Bumped appVersion to 0.21.1 (core + gateway version alignment).
+        - kind: changed
+          description: Bumped appVersion to 0.21.0 (core + gateway version alignment).
+        - kind: changed
+          description: Drop bundled Postgres subchart — users point the gateway at any Postgres 13+ via DATABASE_URL (managed RDS, self-hosted, separate bitnami/postgresql install, etc.). Keeps the chart lean and avoids subchart licensing drift.
+        - kind: added
+          description: Bumped appVersion to 0.4.0 (core + gateway version alignment).
+      artifacthub.io/containsSecurityUpdates: "false"
+      artifacthub.io/displayName: systemprompt — AI governance gateway
+      artifacthub.io/images: |
+        - name: gateway
+          image: ghcr.io/systempromptio/systemprompt-template:0.28.0
+          platforms:
+            - linux/amd64
+            - linux/arm64
       artifacthub.io/license: MIT AND BUSL-1.1
-      artifacthub.io/links: "- name: Website\n  url: https://systemprompt.io\n- name:\
-        \ Documentation\n  url: https://systemprompt.io/documentation/\n- name: Guides\n\
-        \  url: https://systemprompt.io/guides\n- name: Main repository\n  url: https://github.com/systempromptio/systemprompt-template\n\
-        - name: Chart source\n  url: https://github.com/systempromptio/systemprompt-template/tree/main/helm/gateway\n\
-        - name: Install docs\n  url: https://github.com/systempromptio/systemprompt-template/blob/main/docs/install/helm.md\n\
-        - name: Discord\n  url: https://discord.gg/wkAbSuPWpr\n"
-      artifacthub.io/operator: 'false'
-      artifacthub.io/prerelease: 'false'
-      artifacthub.io/recommendations: '- url: https://artifacthub.io/packages/helm/bitnami/postgresql
-
-        '
-      artifacthub.io/screenshots: "- title: Governance you can prove \u2014 live audit\
-        \ of every tool call\n  url: https://systemprompt.io/files/images/og-image.jpg\n"
+      artifacthub.io/links: |
+        - name: Website
+          url: https://systemprompt.io
+        - name: Documentation
+          url: https://systemprompt.io/documentation/
+        - name: Guides
+          url: https://systemprompt.io/guides
+        - name: Main repository
+          url: https://github.com/systempromptio/systemprompt-template
+        - name: Chart source
+          url: https://github.com/systempromptio/systemprompt-template/tree/main/helm/gateway
+        - name: Install docs
+          url: https://github.com/systempromptio/systemprompt-template/blob/main/docs/install/helm.md
+        - name: Discord
+          url: https://discord.gg/wkAbSuPWpr
+      artifacthub.io/operator: "false"
+      artifacthub.io/prerelease: "false"
+      artifacthub.io/recommendations: |
+        - url: https://artifacthub.io/packages/helm/bitnami/postgresql
+      artifacthub.io/screenshots: |
+        - title: Governance you can prove — live audit of every tool call
+          url: https://systemprompt.io/files/images/og-image.jpg
     apiVersion: v2
     appVersion: 0.28.0
-    created: '2026-08-07T21:16:50.079418726Z'
-    description: "The governance layer for AI agents \u2014 a single compiled Rust\
-      \ binary that authenticates, authorises, rate-limits, logs, and costs every\
-      \ AI interaction. Self-hosted, air-gap capable, provider-agnostic."
+    created: "2026-08-18T20:15:19.015383546Z"
+    description: The governance layer for AI agents — a single compiled Rust binary
+      that authenticates, authorises, rate-limits, logs, and costs every AI interaction.
+      Self-hosted, air-gap capable, provider-agnostic.
     digest: 2b4c6ec79ebe714359969053a941c8a5d576090d10f29a6a85328c6f2926c339
     home: https://systemprompt.io
     icon: https://systemprompt.io/files/images/logo.svg
@@ -307,46 +488,64 @@ entries:
     version: 0.9.0
   - annotations:
       artifacthub.io/category: ai-machine-learning
-      artifacthub.io/changes: "- kind: changed\n  description: Bumped appVersion to\
-        \ 0.27.0 (core + gateway version alignment).\n- kind: changed\n  description:\
-        \ Bumped appVersion to 0.26.0 (core + gateway version alignment).\n- kind:\
-        \ changed\n  description: Bumped appVersion to 0.25.0 (core + gateway version\
-        \ alignment).\n- kind: changed\n  description: Bumped appVersion to 0.24.0\
-        \ (core + gateway version alignment).\n- kind: changed\n  description: Bumped\
-        \ appVersion to 0.23.0 (core + gateway version alignment).\n- kind: changed\n\
-        \  description: Bumped appVersion to 0.22.0 (core + gateway version alignment).\n\
-        - kind: changed\n  description: Bumped appVersion to 0.21.1 (core + gateway\
-        \ version alignment).\n- kind: changed\n  description: Bumped appVersion to\
-        \ 0.21.0 (core + gateway version alignment).\n- kind: changed\n  description:\
-        \ Drop bundled Postgres subchart \u2014 users point the gateway at any Postgres\
-        \ 13+ via DATABASE_URL (managed RDS, self-hosted, separate bitnami/postgresql\
-        \ install, etc.). Keeps the chart lean and avoids subchart licensing drift.\n\
-        - kind: added\n  description: Bumped appVersion to 0.4.0 (core + gateway version\
-        \ alignment).\n"
-      artifacthub.io/containsSecurityUpdates: 'false'
-      artifacthub.io/displayName: "systemprompt \u2014 AI governance gateway"
-      artifacthub.io/images: "- name: gateway\n  image: ghcr.io/systempromptio/systemprompt-template:0.27.0\n\
-        \  platforms:\n    - linux/amd64\n    - linux/arm64\n"
+      artifacthub.io/changes: |
+        - kind: changed
+          description: Bumped appVersion to 0.27.0 (core + gateway version alignment).
+        - kind: changed
+          description: Bumped appVersion to 0.26.0 (core + gateway version alignment).
+        - kind: changed
+          description: Bumped appVersion to 0.25.0 (core + gateway version alignment).
+        - kind: changed
+          description: Bumped appVersion to 0.24.0 (core + gateway version alignment).
+        - kind: changed
+          description: Bumped appVersion to 0.23.0 (core + gateway version alignment).
+        - kind: changed
+          description: Bumped appVersion to 0.22.0 (core + gateway version alignment).
+        - kind: changed
+          description: Bumped appVersion to 0.21.1 (core + gateway version alignment).
+        - kind: changed
+          description: Bumped appVersion to 0.21.0 (core + gateway version alignment).
+        - kind: changed
+          description: Drop bundled Postgres subchart — users point the gateway at any Postgres 13+ via DATABASE_URL (managed RDS, self-hosted, separate bitnami/postgresql install, etc.). Keeps the chart lean and avoids subchart licensing drift.
+        - kind: added
+          description: Bumped appVersion to 0.4.0 (core + gateway version alignment).
+      artifacthub.io/containsSecurityUpdates: "false"
+      artifacthub.io/displayName: systemprompt — AI governance gateway
+      artifacthub.io/images: |
+        - name: gateway
+          image: ghcr.io/systempromptio/systemprompt-template:0.27.0
+          platforms:
+            - linux/amd64
+            - linux/arm64
       artifacthub.io/license: MIT AND BUSL-1.1
-      artifacthub.io/links: "- name: Website\n  url: https://systemprompt.io\n- name:\
-        \ Documentation\n  url: https://systemprompt.io/documentation/\n- name: Guides\n\
-        \  url: https://systemprompt.io/guides\n- name: Main repository\n  url: https://github.com/systempromptio/systemprompt-template\n\
-        - name: Chart source\n  url: https://github.com/systempromptio/systemprompt-template/tree/main/helm/gateway\n\
-        - name: Install docs\n  url: https://github.com/systempromptio/systemprompt-template/blob/main/docs/install/helm.md\n\
-        - name: Discord\n  url: https://discord.gg/wkAbSuPWpr\n"
-      artifacthub.io/operator: 'false'
-      artifacthub.io/prerelease: 'false'
-      artifacthub.io/recommendations: '- url: https://artifacthub.io/packages/helm/bitnami/postgresql
-
-        '
-      artifacthub.io/screenshots: "- title: Governance you can prove \u2014 live audit\
-        \ of every tool call\n  url: https://systemprompt.io/files/images/og-image.jpg\n"
+      artifacthub.io/links: |
+        - name: Website
+          url: https://systemprompt.io
+        - name: Documentation
+          url: https://systemprompt.io/documentation/
+        - name: Guides
+          url: https://systemprompt.io/guides
+        - name: Main repository
+          url: https://github.com/systempromptio/systemprompt-template
+        - name: Chart source
+          url: https://github.com/systempromptio/systemprompt-template/tree/main/helm/gateway
+        - name: Install docs
+          url: https://github.com/systempromptio/systemprompt-template/blob/main/docs/install/helm.md
+        - name: Discord
+          url: https://discord.gg/wkAbSuPWpr
+      artifacthub.io/operator: "false"
+      artifacthub.io/prerelease: "false"
+      artifacthub.io/recommendations: |
+        - url: https://artifacthub.io/packages/helm/bitnami/postgresql
+      artifacthub.io/screenshots: |
+        - title: Governance you can prove — live audit of every tool call
+          url: https://systemprompt.io/files/images/og-image.jpg
     apiVersion: v2
     appVersion: 0.27.0
-    created: '2026-08-07T21:16:50.079038459Z'
-    description: "The governance layer for AI agents \u2014 a single compiled Rust\
-      \ binary that authenticates, authorises, rate-limits, logs, and costs every\
-      \ AI interaction. Self-hosted, air-gap capable, provider-agnostic."
+    created: "2026-08-18T20:15:19.014867838Z"
+    description: The governance layer for AI agents — a single compiled Rust binary
+      that authenticates, authorises, rate-limits, logs, and costs every AI interaction.
+      Self-hosted, air-gap capable, provider-agnostic.
     digest: e086f5ae7c117439a4dabfa82680cce9c85e081833cc6d7d944f13017a8c86c9
     home: https://systemprompt.io
     icon: https://systemprompt.io/files/images/logo.svg
@@ -380,44 +579,62 @@ entries:
     version: 0.8.0
   - annotations:
       artifacthub.io/category: ai-machine-learning
-      artifacthub.io/changes: "- kind: changed\n  description: Bumped appVersion to\
-        \ 0.26.0 (core + gateway version alignment).\n- kind: changed\n  description:\
-        \ Bumped appVersion to 0.25.0 (core + gateway version alignment).\n- kind:\
-        \ changed\n  description: Bumped appVersion to 0.24.0 (core + gateway version\
-        \ alignment).\n- kind: changed\n  description: Bumped appVersion to 0.23.0\
-        \ (core + gateway version alignment).\n- kind: changed\n  description: Bumped\
-        \ appVersion to 0.22.0 (core + gateway version alignment).\n- kind: changed\n\
-        \  description: Bumped appVersion to 0.21.1 (core + gateway version alignment).\n\
-        - kind: changed\n  description: Bumped appVersion to 0.21.0 (core + gateway\
-        \ version alignment).\n- kind: changed\n  description: Drop bundled Postgres\
-        \ subchart \u2014 users point the gateway at any Postgres 13+ via DATABASE_URL\
-        \ (managed RDS, self-hosted, separate bitnami/postgresql install, etc.). Keeps\
-        \ the chart lean and avoids subchart licensing drift.\n- kind: added\n  description:\
-        \ Bumped appVersion to 0.4.0 (core + gateway version alignment).\n"
-      artifacthub.io/containsSecurityUpdates: 'false'
-      artifacthub.io/displayName: "systemprompt \u2014 AI governance gateway"
-      artifacthub.io/images: "- name: gateway\n  image: ghcr.io/systempromptio/systemprompt-template:0.26.0\n\
-        \  platforms:\n    - linux/amd64\n    - linux/arm64\n"
+      artifacthub.io/changes: |
+        - kind: changed
+          description: Bumped appVersion to 0.26.0 (core + gateway version alignment).
+        - kind: changed
+          description: Bumped appVersion to 0.25.0 (core + gateway version alignment).
+        - kind: changed
+          description: Bumped appVersion to 0.24.0 (core + gateway version alignment).
+        - kind: changed
+          description: Bumped appVersion to 0.23.0 (core + gateway version alignment).
+        - kind: changed
+          description: Bumped appVersion to 0.22.0 (core + gateway version alignment).
+        - kind: changed
+          description: Bumped appVersion to 0.21.1 (core + gateway version alignment).
+        - kind: changed
+          description: Bumped appVersion to 0.21.0 (core + gateway version alignment).
+        - kind: changed
+          description: Drop bundled Postgres subchart — users point the gateway at any Postgres 13+ via DATABASE_URL (managed RDS, self-hosted, separate bitnami/postgresql install, etc.). Keeps the chart lean and avoids subchart licensing drift.
+        - kind: added
+          description: Bumped appVersion to 0.4.0 (core + gateway version alignment).
+      artifacthub.io/containsSecurityUpdates: "false"
+      artifacthub.io/displayName: systemprompt — AI governance gateway
+      artifacthub.io/images: |
+        - name: gateway
+          image: ghcr.io/systempromptio/systemprompt-template:0.26.0
+          platforms:
+            - linux/amd64
+            - linux/arm64
       artifacthub.io/license: MIT AND BUSL-1.1
-      artifacthub.io/links: "- name: Website\n  url: https://systemprompt.io\n- name:\
-        \ Documentation\n  url: https://systemprompt.io/documentation/\n- name: Guides\n\
-        \  url: https://systemprompt.io/guides\n- name: Main repository\n  url: https://github.com/systempromptio/systemprompt-template\n\
-        - name: Chart source\n  url: https://github.com/systempromptio/systemprompt-template/tree/main/helm/gateway\n\
-        - name: Install docs\n  url: https://github.com/systempromptio/systemprompt-template/blob/main/docs/install/helm.md\n\
-        - name: Discord\n  url: https://discord.gg/wkAbSuPWpr\n"
-      artifacthub.io/operator: 'false'
-      artifacthub.io/prerelease: 'false'
-      artifacthub.io/recommendations: '- url: https://artifacthub.io/packages/helm/bitnami/postgresql
-
-        '
-      artifacthub.io/screenshots: "- title: Governance you can prove \u2014 live audit\
-        \ of every tool call\n  url: https://systemprompt.io/files/images/og-image.jpg\n"
+      artifacthub.io/links: |
+        - name: Website
+          url: https://systemprompt.io
+        - name: Documentation
+          url: https://systemprompt.io/documentation/
+        - name: Guides
+          url: https://systemprompt.io/guides
+        - name: Main repository
+          url: https://github.com/systempromptio/systemprompt-template
+        - name: Chart source
+          url: https://github.com/systempromptio/systemprompt-template/tree/main/helm/gateway
+        - name: Install docs
+          url: https://github.com/systempromptio/systemprompt-template/blob/main/docs/install/helm.md
+        - name: Discord
+          url: https://discord.gg/wkAbSuPWpr
+      artifacthub.io/operator: "false"
+      artifacthub.io/prerelease: "false"
+      artifacthub.io/recommendations: |
+        - url: https://artifacthub.io/packages/helm/bitnami/postgresql
+      artifacthub.io/screenshots: |
+        - title: Governance you can prove — live audit of every tool call
+          url: https://systemprompt.io/files/images/og-image.jpg
     apiVersion: v2
     appVersion: 0.26.0
-    created: '2026-08-07T21:16:50.078664632Z'
-    description: "The governance layer for AI agents \u2014 a single compiled Rust\
-      \ binary that authenticates, authorises, rate-limits, logs, and costs every\
-      \ AI interaction. Self-hosted, air-gap capable, provider-agnostic."
+    created: "2026-08-18T20:15:19.014329437Z"
+    description: The governance layer for AI agents — a single compiled Rust binary
+      that authenticates, authorises, rate-limits, logs, and costs every AI interaction.
+      Self-hosted, air-gap capable, provider-agnostic.
     digest: adfb9cc8af1464ba468e1c0e4f2033050a8543701add9479c7edce136ed866e5
     home: https://systemprompt.io
     icon: https://systemprompt.io/files/images/logo.svg
@@ -451,43 +668,60 @@ entries:
     version: 0.7.0
   - annotations:
       artifacthub.io/category: ai-machine-learning
-      artifacthub.io/changes: "- kind: changed\n  description: Bumped appVersion to\
-        \ 0.25.0 (core + gateway version alignment).\n- kind: changed\n  description:\
-        \ Bumped appVersion to 0.24.0 (core + gateway version alignment).\n- kind:\
-        \ changed\n  description: Bumped appVersion to 0.23.0 (core + gateway version\
-        \ alignment).\n- kind: changed\n  description: Bumped appVersion to 0.22.0\
-        \ (core + gateway version alignment).\n- kind: changed\n  description: Bumped\
-        \ appVersion to 0.21.1 (core + gateway version alignment).\n- kind: changed\n\
-        \  description: Bumped appVersion to 0.21.0 (core + gateway version alignment).\n\
-        - kind: changed\n  description: Drop bundled Postgres subchart \u2014 users\
-        \ point the gateway at any Postgres 13+ via DATABASE_URL (managed RDS, self-hosted,\
-        \ separate bitnami/postgresql install, etc.). Keeps the chart lean and avoids\
-        \ subchart licensing drift.\n- kind: added\n  description: Bumped appVersion\
-        \ to 0.4.0 (core + gateway version alignment).\n"
-      artifacthub.io/containsSecurityUpdates: 'false'
-      artifacthub.io/displayName: "systemprompt \u2014 AI governance gateway"
-      artifacthub.io/images: "- name: gateway\n  image: ghcr.io/systempromptio/systemprompt-template:0.25.0\n\
-        \  platforms:\n    - linux/amd64\n    - linux/arm64\n"
+      artifacthub.io/changes: |
+        - kind: changed
+          description: Bumped appVersion to 0.25.0 (core + gateway version alignment).
+        - kind: changed
+          description: Bumped appVersion to 0.24.0 (core + gateway version alignment).
+        - kind: changed
+          description: Bumped appVersion to 0.23.0 (core + gateway version alignment).
+        - kind: changed
+          description: Bumped appVersion to 0.22.0 (core + gateway version alignment).
+        - kind: changed
+          description: Bumped appVersion to 0.21.1 (core + gateway version alignment).
+        - kind: changed
+          description: Bumped appVersion to 0.21.0 (core + gateway version alignment).
+        - kind: changed
+          description: Drop bundled Postgres subchart — users point the gateway at any Postgres 13+ via DATABASE_URL (managed RDS, self-hosted, separate bitnami/postgresql install, etc.). Keeps the chart lean and avoids subchart licensing drift.
+        - kind: added
+          description: Bumped appVersion to 0.4.0 (core + gateway version alignment).
+      artifacthub.io/containsSecurityUpdates: "false"
+      artifacthub.io/displayName: systemprompt — AI governance gateway
+      artifacthub.io/images: |
+        - name: gateway
+          image: ghcr.io/systempromptio/systemprompt-template:0.25.0
+          platforms:
+            - linux/amd64
+            - linux/arm64
       artifacthub.io/license: MIT AND BUSL-1.1
-      artifacthub.io/links: "- name: Website\n  url: https://systemprompt.io\n- name:\
-        \ Documentation\n  url: https://systemprompt.io/documentation/\n- name: Guides\n\
-        \  url: https://systemprompt.io/guides\n- name: Main repository\n  url: https://github.com/systempromptio/systemprompt-template\n\
-        - name: Chart source\n  url: https://github.com/systempromptio/systemprompt-template/tree/main/helm/gateway\n\
-        - name: Install docs\n  url: https://github.com/systempromptio/systemprompt-template/blob/main/docs/install/helm.md\n\
-        - name: Discord\n  url: https://discord.gg/wkAbSuPWpr\n"
-      artifacthub.io/operator: 'false'
-      artifacthub.io/prerelease: 'false'
-      artifacthub.io/recommendations: '- url: https://artifacthub.io/packages/helm/bitnami/postgresql
-
-        '
-      artifacthub.io/screenshots: "- title: Governance you can prove \u2014 live audit\
-        \ of every tool call\n  url: https://systemprompt.io/files/images/og-image.jpg\n"
+      artifacthub.io/links: |
+        - name: Website
+          url: https://systemprompt.io
+        - name: Documentation
+          url: https://systemprompt.io/documentation/
+        - name: Guides
+          url: https://systemprompt.io/guides
+        - name: Main repository
+          url: https://github.com/systempromptio/systemprompt-template
+        - name: Chart source
+          url: https://github.com/systempromptio/systemprompt-template/tree/main/helm/gateway
+        - name: Install docs
+          url: https://github.com/systempromptio/systemprompt-template/blob/main/docs/install/helm.md
+        - name: Discord
+          url: https://discord.gg/wkAbSuPWpr
+      artifacthub.io/operator: "false"
+      artifacthub.io/prerelease: "false"
+      artifacthub.io/recommendations: |
+        - url: https://artifacthub.io/packages/helm/bitnami/postgresql
+      artifacthub.io/screenshots: |
+        - title: Governance you can prove — live audit of every tool call
+          url: https://systemprompt.io/files/images/og-image.jpg
     apiVersion: v2
     appVersion: 0.25.0
-    created: '2026-08-07T21:16:50.078273249Z'
-    description: "The governance layer for AI agents \u2014 a single compiled Rust\
-      \ binary that authenticates, authorises, rate-limits, logs, and costs every\
-      \ AI interaction. Self-hosted, air-gap capable, provider-agnostic."
+    created: "2026-08-18T20:15:19.013757766Z"
+    description: The governance layer for AI agents — a single compiled Rust binary
+      that authenticates, authorises, rate-limits, logs, and costs every AI interaction.
+      Self-hosted, air-gap capable, provider-agnostic.
     digest: a4557b3b4216e59f80e2bdf9ae9598d5bf382da7ac8dfadecbaa151cfdfc6afc
     home: https://systemprompt.io
     icon: https://systemprompt.io/files/images/logo.svg
@@ -521,42 +755,58 @@ entries:
     version: 0.6.0
   - annotations:
       artifacthub.io/category: ai-machine-learning
-      artifacthub.io/changes: "- kind: changed\n  description: Bumped appVersion to\
-        \ 0.24.0 (core + gateway version alignment).\n- kind: changed\n  description:\
-        \ Bumped appVersion to 0.23.0 (core + gateway version alignment).\n- kind:\
-        \ changed\n  description: Bumped appVersion to 0.22.0 (core + gateway version\
-        \ alignment).\n- kind: changed\n  description: Bumped appVersion to 0.21.1\
-        \ (core + gateway version alignment).\n- kind: changed\n  description: Bumped\
-        \ appVersion to 0.21.0 (core + gateway version alignment).\n- kind: changed\n\
-        \  description: Drop bundled Postgres subchart \u2014 users point the gateway\
-        \ at any Postgres 13+ via DATABASE_URL (managed RDS, self-hosted, separate\
-        \ bitnami/postgresql install, etc.). Keeps the chart lean and avoids subchart\
-        \ licensing drift.\n- kind: added\n  description: Bumped appVersion to 0.4.0\
-        \ (core + gateway version alignment).\n"
-      artifacthub.io/containsSecurityUpdates: 'false'
-      artifacthub.io/displayName: "systemprompt \u2014 AI governance gateway"
-      artifacthub.io/images: "- name: gateway\n  image: ghcr.io/systempromptio/systemprompt-template:0.24.0\n\
-        \  platforms:\n    - linux/amd64\n    - linux/arm64\n"
+      artifacthub.io/changes: |
+        - kind: changed
+          description: Bumped appVersion to 0.24.0 (core + gateway version alignment).
+        - kind: changed
+          description: Bumped appVersion to 0.23.0 (core + gateway version alignment).
+        - kind: changed
+          description: Bumped appVersion to 0.22.0 (core + gateway version alignment).
+        - kind: changed
+          description: Bumped appVersion to 0.21.1 (core + gateway version alignment).
+        - kind: changed
+          description: Bumped appVersion to 0.21.0 (core + gateway version alignment).
+        - kind: changed
+          description: Drop bundled Postgres subchart — users point the gateway at any Postgres 13+ via DATABASE_URL (managed RDS, self-hosted, separate bitnami/postgresql install, etc.). Keeps the chart lean and avoids subchart licensing drift.
+        - kind: added
+          description: Bumped appVersion to 0.4.0 (core + gateway version alignment).
+      artifacthub.io/containsSecurityUpdates: "false"
+      artifacthub.io/displayName: systemprompt — AI governance gateway
+      artifacthub.io/images: |
+        - name: gateway
+          image: ghcr.io/systempromptio/systemprompt-template:0.24.0
+          platforms:
+            - linux/amd64
+            - linux/arm64
       artifacthub.io/license: MIT AND BUSL-1.1
-      artifacthub.io/links: "- name: Website\n  url: https://systemprompt.io\n- name:\
-        \ Documentation\n  url: https://systemprompt.io/documentation/\n- name: Guides\n\
-        \  url: https://systemprompt.io/guides\n- name: Main repository\n  url: https://github.com/systempromptio/systemprompt-template\n\
-        - name: Chart source\n  url: https://github.com/systempromptio/systemprompt-template/tree/main/helm/gateway\n\
-        - name: Install docs\n  url: https://github.com/systempromptio/systemprompt-template/blob/main/docs/install/helm.md\n\
-        - name: Discord\n  url: https://discord.gg/wkAbSuPWpr\n"
-      artifacthub.io/operator: 'false'
-      artifacthub.io/prerelease: 'false'
-      artifacthub.io/recommendations: '- url: https://artifacthub.io/packages/helm/bitnami/postgresql
-
-        '
-      artifacthub.io/screenshots: "- title: Governance you can prove \u2014 live audit\
-        \ of every tool call\n  url: https://systemprompt.io/files/images/og-image.jpg\n"
+      artifacthub.io/links: |
+        - name: Website
+          url: https://systemprompt.io
+        - name: Documentation
+          url: https://systemprompt.io/documentation/
+        - name: Guides
+          url: https://systemprompt.io/guides
+        - name: Main repository
+          url: https://github.com/systempromptio/systemprompt-template
+        - name: Chart source
+          url: https://github.com/systempromptio/systemprompt-template/tree/main/helm/gateway
+        - name: Install docs
+          url: https://github.com/systempromptio/systemprompt-template/blob/main/docs/install/helm.md
+        - name: Discord
+          url: https://discord.gg/wkAbSuPWpr
+      artifacthub.io/operator: "false"
+      artifacthub.io/prerelease: "false"
+      artifacthub.io/recommendations: |
+        - url: https://artifacthub.io/packages/helm/bitnami/postgresql
+      artifacthub.io/screenshots: |
+        - title: Governance you can prove — live audit of every tool call
+          url: https://systemprompt.io/files/images/og-image.jpg
     apiVersion: v2
     appVersion: 0.24.0
-    created: '2026-08-07T21:16:50.077854846Z'
-    description: "The governance layer for AI agents \u2014 a single compiled Rust\
-      \ binary that authenticates, authorises, rate-limits, logs, and costs every\
-      \ AI interaction. Self-hosted, air-gap capable, provider-agnostic."
+    created: "2026-08-18T20:15:19.01324363Z"
+    description: The governance layer for AI agents — a single compiled Rust binary
+      that authenticates, authorises, rate-limits, logs, and costs every AI interaction.
+      Self-hosted, air-gap capable, provider-agnostic.
     digest: 3d575068886242a63bfc6b90fcb18aa5e41426f0c8259a0f9879c9c5c74f045b
     home: https://systemprompt.io
     icon: https://systemprompt.io/files/images/logo.svg
@@ -590,41 +840,56 @@ entries:
     version: 0.5.0
   - annotations:
       artifacthub.io/category: ai-machine-learning
-      artifacthub.io/changes: "- kind: changed\n  description: Bumped appVersion to\
-        \ 0.23.0 (core + gateway version alignment).\n- kind: changed\n  description:\
-        \ Bumped appVersion to 0.22.0 (core + gateway version alignment).\n- kind:\
-        \ changed\n  description: Bumped appVersion to 0.21.1 (core + gateway version\
-        \ alignment).\n- kind: changed\n  description: Bumped appVersion to 0.21.0\
-        \ (core + gateway version alignment).\n- kind: changed\n  description: Drop\
-        \ bundled Postgres subchart \u2014 users point the gateway at any Postgres\
-        \ 13+ via DATABASE_URL (managed RDS, self-hosted, separate bitnami/postgresql\
-        \ install, etc.). Keeps the chart lean and avoids subchart licensing drift.\n\
-        - kind: added\n  description: Bumped appVersion to 0.4.0 (core + gateway version\
-        \ alignment).\n"
-      artifacthub.io/containsSecurityUpdates: 'false'
-      artifacthub.io/displayName: "systemprompt \u2014 AI governance gateway"
-      artifacthub.io/images: "- name: gateway\n  image: ghcr.io/systempromptio/systemprompt-template:0.23.0\n\
-        \  platforms:\n    - linux/amd64\n    - linux/arm64\n"
+      artifacthub.io/changes: |
+        - kind: changed
+          description: Bumped appVersion to 0.23.0 (core + gateway version alignment).
+        - kind: changed
+          description: Bumped appVersion to 0.22.0 (core + gateway version alignment).
+        - kind: changed
+          description: Bumped appVersion to 0.21.1 (core + gateway version alignment).
+        - kind: changed
+          description: Bumped appVersion to 0.21.0 (core + gateway version alignment).
+        - kind: changed
+          description: Drop bundled Postgres subchart — users point the gateway at any Postgres 13+ via DATABASE_URL (managed RDS, self-hosted, separate bitnami/postgresql install, etc.). Keeps the chart lean and avoids subchart licensing drift.
+        - kind: added
+          description: Bumped appVersion to 0.4.0 (core + gateway version alignment).
+      artifacthub.io/containsSecurityUpdates: "false"
+      artifacthub.io/displayName: systemprompt — AI governance gateway
+      artifacthub.io/images: |
+        - name: gateway
+          image: ghcr.io/systempromptio/systemprompt-template:0.23.0
+          platforms:
+            - linux/amd64
+            - linux/arm64
       artifacthub.io/license: MIT AND BUSL-1.1
-      artifacthub.io/links: "- name: Website\n  url: https://systemprompt.io\n- name:\
-        \ Documentation\n  url: https://systemprompt.io/documentation/\n- name: Guides\n\
-        \  url: https://systemprompt.io/guides\n- name: Main repository\n  url: https://github.com/systempromptio/systemprompt-template\n\
-        - name: Chart source\n  url: https://github.com/systempromptio/systemprompt-template/tree/main/helm/gateway\n\
-        - name: Install docs\n  url: https://github.com/systempromptio/systemprompt-template/blob/main/docs/install/helm.md\n\
-        - name: Discord\n  url: https://discord.gg/wkAbSuPWpr\n"
-      artifacthub.io/operator: 'false'
-      artifacthub.io/prerelease: 'false'
-      artifacthub.io/recommendations: '- url: https://artifacthub.io/packages/helm/bitnami/postgresql
-
-        '
-      artifacthub.io/screenshots: "- title: Governance you can prove \u2014 live audit\
-        \ of every tool call\n  url: https://systemprompt.io/files/images/og-image.jpg\n"
+      artifacthub.io/links: |
+        - name: Website
+          url: https://systemprompt.io
+        - name: Documentation
+          url: https://systemprompt.io/documentation/
+        - name: Guides
+          url: https://systemprompt.io/guides
+        - name: Main repository
+          url: https://github.com/systempromptio/systemprompt-template
+        - name: Chart source
+          url: https://github.com/systempromptio/systemprompt-template/tree/main/helm/gateway
+        - name: Install docs
+          url: https://github.com/systempromptio/systemprompt-template/blob/main/docs/install/helm.md
+        - name: Discord
+          url: https://discord.gg/wkAbSuPWpr
+      artifacthub.io/operator: "false"
+      artifacthub.io/prerelease: "false"
+      artifacthub.io/recommendations: |
+        - url: https://artifacthub.io/packages/helm/bitnami/postgresql
+      artifacthub.io/screenshots: |
+        - title: Governance you can prove — live audit of every tool call
+          url: https://systemprompt.io/files/images/og-image.jpg
     apiVersion: v2
     appVersion: 0.23.0
-    created: '2026-08-07T21:16:50.077453918Z'
-    description: "The governance layer for AI agents \u2014 a single compiled Rust\
-      \ binary that authenticates, authorises, rate-limits, logs, and costs every\
-      \ AI interaction. Self-hosted, air-gap capable, provider-agnostic."
+    created: "2026-08-18T20:15:19.012707061Z"
+    description: The governance layer for AI agents — a single compiled Rust binary
+      that authenticates, authorises, rate-limits, logs, and costs every AI interaction.
+      Self-hosted, air-gap capable, provider-agnostic.
     digest: 821ef7634952a03cc8ab5835e4b966032ea592ca2ad02846968a2d25ed86582d
     home: https://systemprompt.io
     icon: https://systemprompt.io/files/images/logo.svg
@@ -658,39 +923,54 @@ entries:
     version: 0.4.0
   - annotations:
       artifacthub.io/category: ai-machine-learning
-      artifacthub.io/changes: "- kind: changed\n  description: Bumped appVersion to\
-        \ 0.22.0 (core + gateway version alignment).\n- kind: changed\n  description:\
-        \ Bumped appVersion to 0.21.1 (core + gateway version alignment).\n- kind:\
-        \ changed\n  description: Bumped appVersion to 0.21.0 (core + gateway version\
-        \ alignment).\n- kind: changed\n  description: Drop bundled Postgres subchart\
-        \ \u2014 users point the gateway at any Postgres 13+ via DATABASE_URL (managed\
-        \ RDS, self-hosted, separate bitnami/postgresql install, etc.). Keeps the\
-        \ chart lean and avoids subchart licensing drift.\n- kind: added\n  description:\
-        \ Bumped appVersion to 0.4.0 (core + gateway version alignment).\n"
-      artifacthub.io/containsSecurityUpdates: 'false'
-      artifacthub.io/displayName: "systemprompt \u2014 AI governance gateway"
-      artifacthub.io/images: "- name: gateway\n  image: ghcr.io/systempromptio/systemprompt-template:0.22.0\n\
-        \  platforms:\n    - linux/amd64\n    - linux/arm64\n"
+      artifacthub.io/changes: |
+        - kind: changed
+          description: Bumped appVersion to 0.22.0 (core + gateway version alignment).
+        - kind: changed
+          description: Bumped appVersion to 0.21.1 (core + gateway version alignment).
+        - kind: changed
+          description: Bumped appVersion to 0.21.0 (core + gateway version alignment).
+        - kind: changed
+          description: Drop bundled Postgres subchart — users point the gateway at any Postgres 13+ via DATABASE_URL (managed RDS, self-hosted, separate bitnami/postgresql install, etc.). Keeps the chart lean and avoids subchart licensing drift.
+        - kind: added
+          description: Bumped appVersion to 0.4.0 (core + gateway version alignment).
+      artifacthub.io/containsSecurityUpdates: "false"
+      artifacthub.io/displayName: systemprompt — AI governance gateway
+      artifacthub.io/images: |
+        - name: gateway
+          image: ghcr.io/systempromptio/systemprompt-template:0.22.0
+          platforms:
+            - linux/amd64
+            - linux/arm64
       artifacthub.io/license: MIT AND BUSL-1.1
-      artifacthub.io/links: "- name: Website\n  url: https://systemprompt.io\n- name:\
-        \ Documentation\n  url: https://systemprompt.io/documentation/\n- name: Guides\n\
-        \  url: https://systemprompt.io/guides\n- name: Main repository\n  url: https://github.com/systempromptio/systemprompt-template\n\
-        - name: Chart source\n  url: https://github.com/systempromptio/systemprompt-template/tree/main/helm/gateway\n\
-        - name: Install docs\n  url: https://github.com/systempromptio/systemprompt-template/blob/main/docs/install/helm.md\n\
-        - name: Discord\n  url: https://discord.gg/wkAbSuPWpr\n"
-      artifacthub.io/operator: 'false'
-      artifacthub.io/prerelease: 'false'
-      artifacthub.io/recommendations: '- url: https://artifacthub.io/packages/helm/bitnami/postgresql
-
-        '
-      artifacthub.io/screenshots: "- title: Governance you can prove \u2014 live audit\
-        \ of every tool call\n  url: https://systemprompt.io/files/images/og-image.jpg\n"
+      artifacthub.io/links: |
+        - name: Website
+          url: https://systemprompt.io
+        - name: Documentation
+          url: https://systemprompt.io/documentation/
+        - name: Guides
+          url: https://systemprompt.io/guides
+        - name: Main repository
+          url: https://github.com/systempromptio/systemprompt-template
+        - name: Chart source
+          url: https://github.com/systempromptio/systemprompt-template/tree/main/helm/gateway
+        - name: Install docs
+          url: https://github.com/systempromptio/systemprompt-template/blob/main/docs/install/helm.md
+        - name: Discord
+          url: https://discord.gg/wkAbSuPWpr
+      artifacthub.io/operator: "false"
+      artifacthub.io/prerelease: "false"
+      artifacthub.io/recommendations: |
+        - url: https://artifacthub.io/packages/helm/bitnami/postgresql
+      artifacthub.io/screenshots: |
+        - title: Governance you can prove — live audit of every tool call
+          url: https://systemprompt.io/files/images/og-image.jpg
     apiVersion: v2
     appVersion: 0.22.0
-    created: '2026-08-07T21:16:50.077041103Z'
-    description: "The governance layer for AI agents \u2014 a single compiled Rust\
-      \ binary that authenticates, authorises, rate-limits, logs, and costs every\
-      \ AI interaction. Self-hosted, air-gap capable, provider-agnostic."
+    created: "2026-08-18T20:15:19.012212143Z"
+    description: The governance layer for AI agents — a single compiled Rust binary
+      that authenticates, authorises, rate-limits, logs, and costs every AI interaction.
+      Self-hosted, air-gap capable, provider-agnostic.
     digest: a00a8b81588c724894395222cb4cd52a7c4983f904a87fd2f23a5400ca293466
     home: https://systemprompt.io
     icon: https://systemprompt.io/files/images/logo.svg
@@ -722,4 +1002,4 @@ entries:
     urls:
     - https://charts.systemprompt.io/gateway-0.3.2.tgz
     version: 0.3.2
-generated: '2026-08-07T21:16:50.073577672Z'
+generated: "2026-08-18T20:15:19.009085046Z"
